@@ -37,6 +37,7 @@ div.cycloElement {
 div.highlight {
 	/*design*/
 	color: #F00;
+	background: #FFC;
 	font-weight: bold;
 }
 .cycloParent {

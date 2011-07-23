@@ -1,0 +1,54 @@
+/*================================================================================
+CycloMenu v1.0
+Created by Abhishek Ghosh
+----------------------------------------------------------------------------------
+PRE-REQUISITES:
+---------------
+PARENT:
+	class=cycloParent
+	id=cParent
+	
+ELEMENTS:
+	tag: DIV 
+	class=cycloElement (cycloElement highlight)
+================================================================================*/
+
+div.cycloElement {
+	/*core - do not edit*/
+		position: absolute;
+		-o-transform-origin: 0% 0%;
+		-webkit-transform-origin: 0% 0%;
+		-moz-transform-origin: 0% 0%;
+		-ms-transform-origin: 0% 0%;
+		-transform-origin: 0% 0%;
+	/*behaviour - motion characteristics*/
+		-o-transition: -o-transform 2s;
+		-webkit-transition: -webkit-transform 2s;
+		-moz-transition: -moz-transform 2s;
+		-ms-transition: -ms-transform 2s;
+		transition: transform 2s;
+	/*design*/
+		min-width: 100px;
+		background: #EEE;
+		border: thin solid #999;
+		font-family: Verdana, Geneva, sans-serif; font-size: 0.8em;
+		cursor: pointer;
+}
+div.highlight {
+	/*design*/
+	color: #F00;
+	font-weight: bold;
+}
+.cycloParent {
+	/*behaviour - motion characteristics*/
+	-o-transition: -o-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-webkit-transition: -webkit-transform 1s;
+	-ms-transition: -ms-transform 1s;
+	transition: transform 1s;
+	/*design*/
+	min-height: 1px; min-width: 1px;
+	max-height: 1px; max-width: 1px;
+	height: 1px; width: 1px;
+	background-color: #F00;		
+}
